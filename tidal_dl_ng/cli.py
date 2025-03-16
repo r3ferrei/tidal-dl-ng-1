@@ -104,8 +104,8 @@ def _download(ctx: typer.Context, urls: list[str], try_login: bool = True) -> bo
     progress_table = Table.grid()
 
     # Style Progress display.
-    #progress_table.add_row(progress)
-    #progress_table.add_row(progress_overall)
+    progress_table.add_row(progress)
+    progress_table.add_row(progress_overall)
 
     progress_group = Group(
         progress_table,
