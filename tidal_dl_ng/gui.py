@@ -49,11 +49,11 @@ import sys
 import time
 from collections.abc import Callable, Sequence
 
-from config import HandlingApp
 from requests.exceptions import HTTPError
 from tidalapi.session import LinkLogin
 
 from tidal_dl_ng import __version__, update_available
+from tidal_dl_ng.config import HandlingApp
 from tidal_dl_ng.dialog import DialogLogin, DialogPreferences, DialogVersion
 from tidal_dl_ng.helper.gui import (
     FilterHeader,
