@@ -84,6 +84,9 @@ def search_results_all(session: Session, needle: str, types_media: SearchTypes =
             if offset == 0:
                 result = tmp_result
                 tmp_done = False
+            elif key == "top_hit":
+                # TIDAL repeats a single top-hit object on every page; it is not a list and must not keep paging alive.
+                continue
             elif bool(value):
                 result[key] += value
                 tmp_done = False

@@ -49,7 +49,7 @@ import sys
 import time
 from collections.abc import Callable, Sequence
 
-from config import HandlingApp
+from tidal_dl_ng.config import HandlingApp
 from requests.exceptions import HTTPError
 from tidalapi.session import LinkLogin
 

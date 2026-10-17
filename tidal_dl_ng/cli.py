@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Annotated, Optional
 
 import typer
-from config import HandlingApp
+from tidal_dl_ng.config import HandlingApp
 from rich.console import Group
 from rich.live import Live
 from rich.progress import (
